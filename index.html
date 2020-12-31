@@ -1,0 +1,44 @@
+<!-- Created by Milton (@jmrchelani) using Firebase 
+HTML CSS for the todo list is taken from W3Schools.. too lazy to write my own :D
+ also basic functionality is from W3Schools but Firebase is added by me -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="myDIV" class="header">
+        <h2>My To Do List</h2>
+        <input type="text" id="myInput" placeholder="Title...">
+        <span onclick="newElement()" class="addBtn">Add</span>
+      </div>
+      
+      <ul id="myUL">
+        
+      </ul>
+
+      <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase.js"></script>
+
+    <script>
+    // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyAN2Uf3eohk3kS-orTOfHmhnRZoDfBKJ4s",
+            authDomain: "to-do-app-3bbb5.firebaseapp.com",
+            projectId: "to-do-app-3bbb5",
+            storageBucket: "to-do-app-3bbb5.appspot.com",
+            messagingSenderId: "139527574461",
+            appId: "1:139527574461:web:4238a70fcf294e05f4f8d4"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+      <script src = "index.js"></script>
+      <script>getAllTasks();</script>
+      
+</body>
+</html>
